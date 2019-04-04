@@ -1,0 +1,18 @@
+<p>This is course {{course.courseId}}</p>
+<div class="container">
+  <div class="row" *ngIf="course">
+    <h3>Course - {{ course.courseCode }} &nbsp;<a routerLink="/courses" class="btn btn-default">Back to list</a></h3>
+    <p>&nbsp;</p>
+    <div class="col-md-8 col-sm-12">
+      <dl class="dl-horizontal">
+ 
+      </dl>
+    </div>
+  </div>
+
+  
+  <div *ngIf="!course">
+    <p>Requested course was not found</p>
+    <p><a routerLink="/courses" class="btn btn-default">Back to list</a></p>
+  </div>
+  </div>
